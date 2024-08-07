@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 app.use('/uploads', express.static('uploads'));
 app.use(express.static(path.join(__dirname, 'dist'))); // Serve static files from 'dist'
 
+
 // Routes
 const authRoutes = require('./routes/auth');
 app.use('/api/auth', authRoutes);
